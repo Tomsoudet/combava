@@ -1,0 +1,285 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+body {
+	background-image: url(../Images/back.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	background-color: rgb(245, 231, 2);
+	display: flex;
+	justify-content: center;
+}
+
+header img {
+	width: 100px;
+	height: 100px;
+}
+
+
+header aside {
+	margin-top: auto;
+	margin-bottom: auto;
+	font-family: "Kristen ITC";
+	text-align: center;
+}
+
+
+main {
+	margin : 30px 10% 0% 10%;
+}
+
+#nous { 
+	display: flex;
+	flex-wrap:wrap;
+
+	margin-bottom : 30px;
+}
+
+#nousImg {
+	 width: 100%;
+	 margin-bottom : 30px;
+}
+
+#nousTxt {
+	background-image: url(../Images/papier.jpg);
+	 padding : 2% 5% 2% 5%;
+	 width: 90%;
+	 border: 3px solid #A0A0A0;
+	 text-align:left; 
+}
+
+#nousTxt h3{
+	 font-family: "Kristen ITC";
+}
+
+#partage {
+	display: flex;
+	flex-wrap:wrap;
+	margin-bottom : 30px;
+}
+
+#partageImg {
+	 width: 100%;
+
+	margin-bottom : 30px;	
+}
+
+#partageTxt {
+	background-image: url(../Images/papier.jpg);
+	padding : 2% 5% 2% 5%;
+	width: 90%;
+	border: 3px solid #A0A0A0;
+	text-align:left; 
+}
+
+#partageTxt h3{
+	 font-family: "Kristen ITC";
+}
+
+
+#carte {
+	display: flex;
+	flex-wrap : wrap;
+	background-image: url(../Images/papier.jpg);
+	border: 3px solid #A0A0A0;
+	margin-bottom : 30px;
+}
+
+#carteTxt {
+	width: 90%;
+	 padding : 2% 5% 2% 5%;
+	 font-family: "Kristen ITC";
+	 text-align:left; 
+}
+
+#carte iframe {
+	margin : 0% 5% 5% 5%;
+	width: 90%;
+	height: 16em;
+}
+
+#form {
+	background-image: url(../Images/papier.jpg);
+	border: 3px solid #A0A0A0;
+	margin-bottom : 30px;
+}
+
+#form h3 {
+	padding : 2% 0% 2% 5%;
+	text-align:center;
+	font-family: "Kristen ITC";
+	
+}
+
+.subform{
+	display : flex;
+	flex-direction: column;
+	justify-content : space-between;
+	align-items: center;
+	text-align: center;
+
+}
+
+.subform #nom {
+	margin-bottom: 5%;
+}
+
+.subform #prenom {
+	margin-bottom: 5%;
+}
+
+.subform #mail {
+	margin-bottom: 5%;
+}
+
+.subform #tel {
+	margin-bottom: 5%;
+}
+
+.subform #evenement {
+	margin-bottom: 5%;
+	color: grey;
+	
+}
+
+#newsletter{
+
+	padding : 0% 10% 0% 10%;
+	display: flex;
+	align-items: center;
+	margin-bottom: 5%;
+}
+
+#newsTxt {
+	text-align : left;
+	padding-right: 5px;
+	padding-bottom: 5px;
+}
+
+#newSCkeck {
+
+}
+
+#checkbox{
+	width : 25px;
+	height: 25px;
+}
+
+#valider{
+	margin: 0% 10% 1% 10%;
+	padding: 2px 2px 2px 2px;
+ 	font-family: "Kristen ITC";
+
+}
+
+footer {
+	width: 100%;
+	background-color: rgb(210, 208, 189);
+	text-align: center;
+	display: inline-block;
+	opacity: 0.8;
+
+}
+
+
+
+footer i {
+	margin: 0% 1% 0% 1%;
+	color: black;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 769px) {
+	
+	body {
+	}
+
+	#nous { 
+		flex-wrap:nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#nousImg {	
+	 width : 40%;
+	 order: 2;
+	 margin-left: 2%;
+	}
+
+	#nousTxt {
+	 padding : 10px 15px 10px 15px;
+	 width: 55%;
+	 border: 3px solid #A0A0A0;
+	 text-align:left; 
+	 order: 1;
+	 line-height: 150%;
+	}	
+
+	#partage { 
+		flex-wrap:nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#partageImg {	
+	 width: 30%;
+	 order: 1;
+	 margin-right: 2%;
+	}
+
+	#partageTxt {
+	 padding : 10px 15px 10px 15px;
+	 width: 65%;
+	 order: 2;
+	 line-height: 150%;
+	}
+
+	#Dégustations {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	#carte  {
+		width: max-width;
+	}
+
+	#carte iframe {
+
+		width : max-width;
+		height: 82%;
+	}
+
+	#form {
+		padding : 10px 15px 10px 15px;
+		margin-left : 50px;
+		width : 540px;
+	}
+
+	#formImg {
+		padding : 2px;
+	}
+
+	#formImg img{
+	}
+
+}

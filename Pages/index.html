@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Combava & David's Lemonade</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+
+    <header>
+        
+        <img src="../Images/logo.png" alt="logo" >
+        <aside>
+         <h1>Association Combava </h1>
+        </aside>
+      </header>
+
+
+
+    <main>
+
+      
+
+      <div id="nous">
+          
+        <div id="nousImg">
+            <img src="../Images/combava.png" alt="Combava"  width=100% height=100%>
+        </div>
+        <div id="nousTxt">
+          <h3>Qui sommes nous ?</h3>
+          <p>
+              <a href="http://combava.com">L'association Combava</a> regroupe des producteurs indépendants d'agrumes du sud de la France.
+              Pour la petite histoire : dans les années 50 aux USA, les enfants montaient des stands de citronnade maison devant chez eux, afin de récolter un peu d'argent de poche. Une entreprise de l'époque, "David's Lemonade", a repris l'idée et répandu le principe de ces stands de citronnade à 5 cents dans tout le pays, avec un énorme succès. 70 ans après, elle a aujourd'hui disparu. <br> Mais aujourd'hui, l'association Combava fait revivre l'esprit et les valeurs David's Lemonade à travers ses différents évènements !
+          </p>
+        </div>
+
+      </div>
+
+      <div id="partage">
+
+        <div id="partageImg">
+            <img src="../Images/lemonade.png" alt="Lemonade" width=100% height=100%>
+        </div>
+
+        <div id="partageTxt">
+          <h3>Le goût du partage</h3>
+          <p>
+              Nous organisons des dégustations privées, "VIP", de citronnade tout autour de la France, à la façon des négociants en vin. La citronnade est une boisson saine, mettant en avant le goût unique des différents agrumes frais et bio de production locale, elle est donc tout à fait dans l'air du temps. De plus, les producteurs adhérents seront présents lors des dégustations pour défendre la qualité de leurs produits.
+              N'hésitez pas à venir nous rejoindre à une de nos dégustations en vous inscrivant grâce à notre formulaire !
+          </p>
+
+        </div>
+
+      </div>
+      <div id="Dégustations">
+       <div id="carte">
+
+          <div id="carteTxt">
+           <h3>Trouvez les dégustations les plus proches de chez vous !</h3>
+          </div>
+         <iframe src="https://www.google.com/maps/d/embed?mid=1BNG_1HIAnXMuVQXStWSE90LZoqEVDAfA"></iframe>
+       </div>
+
+        <div id="form">
+
+           <h3>Inscrivez-vous !</h3>
+
+           <form action="formaction" method="post">
+                <div class="subform">
+                  <div>
+                   <input type="text" id="nom" name="user_name" required placeholder="Nom" >
+                  </div>
+                  <div>
+                      <input type="text" id="prenom" name="user_prename" required placeholder="Prénom">
+                  </div>
+                  <div>
+                    <input type="email" id="mail" name="user_mail" required placeholder="Adresse mail">
+                  </div>
+                  <div>
+                    <input type="tel" id="tel" name="phone" placeholder="Téléphone" pattern="+33 [0-9]{9}" required>
+                  </div>                 
+                  <div>
+                      <select name="evenement" id="evenement" required>
+                        <option value="">--Choisissez votre évènement--</option>
+                        <option value="Amiens">Amiens</option>
+                        <option value="Charleville-Mézières">Charleville-Mézières</option>
+                        <option value="Paris">Paris</option>
+                        <option value="Wintzenheim">Wintzenheim</option>
+                        <option value="Auxerre">Auxerre</option>
+                        <option value="Civray-de-Touraine">Civray-de-Touraine</option>
+                        <option value="Besançon">Besançon</option>
+                        <option value="Poitiers">Poitiers</option>
+                        <option value="La Rochelle">La Rochelle</option>
+                        <option value="Maringues">Maringues</option>
+                        <option value="Pompignac">Pompignac</option>
+                        <option value="Biars-sur-Cère">Biars-sur-Cère</option>
+                        <option value="Arpajon-sur-Cère">Arpajon-sur-Cère</option>
+                        <option value="Juvignac">Juvignac</option>
+                        <option value="Le Beausset">Le Beausset</option>
+                      </select>
+                  </div>
+                  <div id ="newsletter">
+                    <div id="newsTxt">
+                      <label  for="Newsletter">Cliquez ici pour recevoir notre newsletter</label>
+                    </div>
+                    <div id="newsCheck">
+                     <input type="checkbox" id="Newsletter" value="false" onchange="if(this.checked) this.value='true'; else this.value='false';"/>
+                    </div>  
+                  </div>
+                <button id="valider" >Valider votre inscription</button>
+              </div>
+          </form>
+          <div id="formImg">
+            <img  src="../Images/photoLemon.png" alt="Lemonade" width=100% height=100%>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer>
+        <a id="fb" href="https://facebook.com"><i class="fa fa-facebook-square" style="font-size:80px"></i></a>
+        <a id="tw" href="https://twitter.com"><i class="fa fa-twitter-square" style="font-size:80px"></i></a>
+        <a id="in" href="https://instagram.com"><i class="fa fa-instagram" style="font-size:80px"></i></a>
+    </footer>
+
+  </body>
+</html>
